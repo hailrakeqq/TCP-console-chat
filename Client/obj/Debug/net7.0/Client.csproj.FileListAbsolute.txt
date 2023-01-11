@@ -1,0 +1,15 @@
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/bin/Debug/net7.0/Client
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/bin/Debug/net7.0/Client.deps.json
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/bin/Debug/net7.0/Client.runtimeconfig.json
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/bin/Debug/net7.0/Client.dll
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/bin/Debug/net7.0/Client.pdb
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/Client.csproj.AssemblyReference.cache
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/Client.GeneratedMSBuildEditorConfig.editorconfig
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/Client.AssemblyInfoInputs.cache
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/Client.AssemblyInfo.cs
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/Client.csproj.CoreCompileInputs.cache
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/Client.dll
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/refint/Client.dll
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/Client.pdb
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/Client.genruntimeconfig.cache
+/home/hailrake/media/code/LowLevelWeb/sockets/TCP-Console-Chat/Client/obj/Debug/net7.0/ref/Client.dll

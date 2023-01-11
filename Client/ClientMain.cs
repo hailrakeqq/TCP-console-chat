@@ -6,13 +6,13 @@ class ClientMain
     {
         using TcpClient client = new TcpClient();
 
-        Console.Write("Enter ip address for connect");
+        Console.Write("Enter ip address for connect: ");
         string? host = Console.ReadLine();
-        Console.Write("Enter port for connect");
+        Console.Write("Enter port for connect: ");
         int port = Convert.ToInt32(Console.ReadLine());
 
-        userName = Console.ReadLine();
         Console.Write("Enter your name: ");
+        userName = Console.ReadLine();
         Console.WriteLine($"Welcome, {userName}");
 
         StreamReader? Reader = null;
@@ -25,7 +25,9 @@ class ClientMain
             Reader = new StreamReader(client.GetStream());
             Writer = new StreamWriter(client.GetStream());
 
-
+            //run new thread for recieve messages
+            Task.Run(() => RecieveMessageAsync(Reader));
+            await SendMessageAsync(Writer);
         }
         catch (System.Exception ex)
         {
@@ -38,7 +40,7 @@ class ClientMain
         }
     }
 
-    async Task RecieveMessageAsync(StreamReader reader)
+    public static async Task RecieveMessageAsync(StreamReader reader)
     {
         while (true)
         {
@@ -58,13 +60,14 @@ class ClientMain
         }
     }
 
-    async Task SendMessageAsync(StreamWriter writer)
+    public static async Task SendMessageAsync(StreamWriter writer)
     {
 
         try
         {
             await writer.WriteLineAsync(userName);
             await writer.FlushAsync();
+            Console.WriteLine("Type message and press Enter for send\n");
 
             while (true)
             {
