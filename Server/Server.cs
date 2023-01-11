@@ -29,7 +29,7 @@ class Server
 
                 Client clientObject = new Client(tcpClient, this);
                 clients.Add(clientObject);
-                await Task.Run(clientObject.MainActivityAsync);
+                Task.Run(clientObject.MainActivityAsync);
             }
         }
         catch (System.Exception ex)
@@ -48,7 +48,7 @@ class Server
         {
             if (client.Id != id)
             {
-                await client.Writer.WriteLineAsync(message);
+                await client.Writer.WriteLineAsync($"\n{message}");
                 await client.Writer.FlushAsync();
             }
         }
